@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Entity" load_steps=2 format=3 uid="uid://dgqiffqwqf5bw"]
+
+[ext_resource type="Script" uid="uid://cfh3m61yeokpn" path="res://Entity.gd" id="1_11ygf"]
+
+[resource]
+script = ExtResource("1_11ygf")
+Name = "Null"
+Stats = 100.0
+Textures = 100.0
+metadata/_custom_type_script = "uid://cfh3m61yeokpn"
