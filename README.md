@@ -5,6 +5,6 @@ price? 0 forever
 
 If you want to help join :3 
 
-https://discord.gg/THzNEa7K9K
+https://discord.gg/ddHPN9CxsK
 
 It'll be fun :3 
