@@ -5,7 +5,7 @@ const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
 
-## to do make new code as this is base code and will kill itself later :3
+## to do make new code as this is base code or this will kill itself later :3 - WT
 
 func _physics_process(delta: float) -> void:
 

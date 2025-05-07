@@ -11,5 +11,15 @@ config_version=5
 [application]
 
 config/name="WOC"
+run/main_scene="uid://b2nxkdbgm0ad8"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1216
+window/size/viewport_height=640
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0

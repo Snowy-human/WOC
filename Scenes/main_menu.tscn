@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2nxkdbgm0ad8"]
+
+[ext_resource type="Script" uid="uid://b7l2x8mxg8b37" path="res://Scenes/main_menu.gd" id="1_28flt"]
+
+[node name="Main menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_28flt")
+
+[node name="P" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.368
+anchor_top = 0.3
+anchor_right = 0.632
+anchor_bottom = 0.7
+offset_left = 0.511963
+offset_right = -0.512024
+offset_bottom = -3.05176e-05
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VB" type="VBoxContainer" parent="P"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.062
+anchor_right = 0.95
+anchor_bottom = 0.937
+offset_top = 0.127999
+offset_bottom = 0.127991
+
+[node name="Play" type="Button" parent="P/VB"]
+layout_mode = 2
+text = "Play"
+
+[node name="Char type" type="Button" parent="P/VB"]
+layout_mode = 2
+text = "Fem"
+
+[node name="Quit" type="Button" parent="P/VB"]
+layout_mode = 2
+text = "Quit"
+
+[connection signal="pressed" from="P/VB/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="P/VB/Char type" to="." method="_on_char_type_pressed"]
+[connection signal="pressed" from="P/VB/Quit" to="." method="_on_quit_pressed"]

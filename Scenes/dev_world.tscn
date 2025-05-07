@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=4 uid="uid://baa55i3tw4w8u"]
+
+[ext_resource type="PackedScene" uid="uid://ck36iapprr0s6" path="res://Scenes/player.tscn" id="1_wbyx0"]
+[ext_resource type="Texture2D" uid="uid://o178216t3y6g" path="res://World/Dev/Dev tiles-Sheet.png" id="2_lluc0"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_tfyk2"]
+vertices = PackedVector2Array(4, 4, -4, 4, -4, -4, 4, -4)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)])
+agent_radius = 0.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k787m"]
+texture = ExtResource("2_lluc0")
+texture_region_size = Vector2i(8, 8)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
+0:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_tfyk2")
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
+1:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_tfyk2")
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
+2:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_tfyk2")
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
+3:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_tfyk2")
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
+4:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_tfyk2")
+
+[sub_resource type="TileSet" id="TileSet_7hfa4"]
+tile_size = Vector2i(8, 8)
+physics_layer_0/collision_layer = 1
+navigation_layer_0/layers = 1
+sources/2 = SubResource("TileSetAtlasSource_k787m")
+
+[node name="Dev world" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_wbyx0")]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+scale = Vector2(8, 8)
+tile_map_data = PackedByteArray("AAAAAAAAAgAEAAAAAAD//wAAAgAEAAAAAAD+/wAAAgAEAAAAAAD9/wAAAgAEAAAAAAD8/wAAAgAEAAAAAAD7/wAAAgAEAAAAAAD6/wAAAgAEAAAAAAD5/wAAAgAEAAAAAAD4/wAAAgAEAAAAAAABAAAAAgAEAAAAAAACAAAAAgAEAAAAAAADAAAAAgAEAAAAAAAEAAAAAgAEAAAAAAAFAAAAAgAEAAAAAAAGAAAAAgAEAAAAAAAHAAAAAgAEAAAAAAAIAP//AgAEAAAAAGAIAP7/AgAEAAAAAGAIAP3/AgAEAAAAAGAIAPz/AgAEAAAAAGAIAPv/AgAEAAAAAGAJAPr/AgAEAAAAAAAKAPr/AgAEAAAAAAALAPr/AgAEAAAAAAAMAPr/AgAEAAAAAAAIAPr/AgACAAAAAAD3////AgACAAAAABD2//7/AgACAAAAABD1//3/AgACAAAAABD0//z/AgACAAAAABDz//z/AgAEAAAAAADy//z/AgAEAAAAAADx//z/AgAEAAAAAADw//z/AgAEAAAAAADv//z/AgAEAAAAAADu//z/AgAEAAAAAADt//z/AgAEAAAAAADs//z/AgAEAAAAAADr//z/AgAEAAAAAAAHAPb/AgAAAAAAAAANAPn/AgAEAAAAAGANAPj/AgAEAAAAAGANAPf/AgAEAAAAAGANAPb/AgAEAAAAAGANAPX/AgAEAAAAAGANAPT/AgAEAAAAAGANAPP/AgAEAAAAAGANAPL/AgAEAAAAAGANAPH/AgAEAAAAAGANAPD/AgAEAAAAAGANAO//AgAEAAAAAGANAO7/AgAEAAAAAGANAO3/AgAEAAAAAGANAOz/AgAEAAAAAGANAOv/AgAEAAAAAGDq//v/AgAEAAAAAFDq//r/AgAEAAAAAFDq//n/AgAEAAAAAFDq//j/AgAEAAAAAFDq//f/AgAEAAAAAFDq//b/AgAEAAAAAFDq//X/AgAEAAAAAFDq//T/AgAEAAAAAFDq//P/AgAEAAAAAFDq//L/AgAEAAAAAFDq//H/AgAEAAAAAFDq//D/AgAEAAAAAFDq/+//AgAEAAAAAFDq/+7/AgAEAAAAAFDq/+3/AgAEAAAAAFDq/+z/AgAEAAAAAFDq/+v/AgAEAAAAAFA=")
+tile_set = SubResource("TileSet_7hfa4")
