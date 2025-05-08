@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="Textures" load_steps=2 format=3 uid="uid://dw26pbn5ffxc0"]
+
+[ext_resource type="Script" uid="uid://be4basnem5ixx" path="res://Resources/Textures.gd" id="1_rfb46"]
+
+[resource]
+script = ExtResource("1_rfb46")
+metadata/_custom_type_script = "uid://be4basnem5ixx"
