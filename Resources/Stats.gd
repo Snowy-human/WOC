@@ -18,9 +18,8 @@ class_name Stats
 @export var Range_damage := 6.0
 @export var Magic_damage := 8.0
 @export_category("Movement")
-@export var Jump_power := -1600.0
+@export var Jump_power := -4.0
 @export var Number_of_jumps := 2
-@export var Run := false
 @export var Run_power := 1
 @export var Flight := false
 @export var Flight_power := 0
